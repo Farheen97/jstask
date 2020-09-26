@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JStask3</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body><i>
+	<center>
+	<header>
+        <h2>Methods of an Array</h2>
+        <div class="a">
+<p id="demo"></p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<button onclick="myFunction1()">PrintMax</button>
+	<p id="demo6"></p>
+	<p id="demo7"></p>
+	<button onclick="myFunction2()">PrintMin</button>
+	<div class="a">
+	<script type="text/javascript">
+		 var a=["hi","welcome","to","mits"];
+		 document.getElementById('demo').innerHTML="<br>1.<u>SORT():</u> Ex:"+a;
+		 document.getElementById('demo1').innerHTML="The sort() method sorts the items of an array. The sort order can be either alphabetic or numeric, and either ascending (up) or descending (down). By default, the sort() method sorts the values as strings in alphabetical and ascending order.<br><u> Output:</u>"+a.sort();
+		  var a=["hi","welcome","to","mits"];
+		  document.getElementById('demo2').innerHTML="<br>2.<u>Reverse Method():</u>Ex:"+a;
+		   document.getElementById('demo3').innerHTML="reverse() method changes the sequence of elements of the given array and returns the reverse sequence. In other words, the arrays last element becomes first and the first element becomes the last. This method also made the changes in the original array.<br><u> Output:</u>"+a.reverse();
+		 	 var b=[83,12,35,93];
+		 	 document.getElementById('demo4').innerHTML="<br>3.<u>Maximum Method()</u>:The maximum method returns the number with the highest value<br>EX:"+b;
+		 	 function myFunction1(){
+		b.sort(function(x,y){
+			return y-x;
+		})
+		 	 document.getElementById('demo5').innerHTML="Maximum element in an array:"+b[0];
+		 	}
+		 	 var b=[83,12,35,93];
+		 	 document.getElementById('demo6').innerHTML="<br><u>4.Minimum Method()</u>:The minimum method returns the number with the lowest value<br> EX:"+b;
+		 	 function myFunction2(){
+		b.sort(function(x,y){
+			return x-y;
+		 	
+		})
+		 	 document.getElementById('demo7').innerHTML="Minimum element in an array:"+b[0];
+		 	}		 	 	
+	</script>
+</div>
+</header>
+<div class="footer">
+  <p>Developed by A.Farheen Taj,MITSWC192023,CSE,MITS</p>
+  </div>
+</center>
+</i>
+</body>
+</html>
